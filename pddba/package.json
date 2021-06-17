@@ -1,0 +1,66 @@
+{
+  "_from": "@passoa/pddba@latest",
+  "_id": "@passoa/pddba@1.0.9",
+  "_inBundle": false,
+  "_integrity": "sha1-fDn/LfcIESaTJwFE6fx8dvFWB+k=",
+  "_location": "/@passoa/pddba",
+  "_phantomChildren": {},
+  "_requested": {
+    "type": "tag",
+    "registry": true,
+    "raw": "@passoa/pddba@latest",
+    "name": "@passoa/pddba",
+    "escapedName": "@passoa%2fpddba",
+    "scope": "@passoa",
+    "rawSpec": "latest",
+    "saveSpec": null,
+    "fetchSpec": "latest"
+  },
+  "_requiredBy": [
+    "/"
+  ],
+  "_resolved": "https://registry.npm.taobao.org/@passoa/pddba/download/@passoa/pddba-1.0.9.tgz",
+  "_shasum": "7c39ff2df708112693270144e9fc7c76f15607e9",
+  "_spec": "@passoa/pddba@latest",
+  "_where": "D:\\projectList\\poseidon-node\\pdserivce",
+  "author": "",
+  "bundleDependencies": false,
+  "dependencies": {
+    "bson": "^4.0.4",
+    "reflect-metadata": "^0.1.13",
+    "typeorm": "^0.2.24"
+  },
+  "deprecated": false,
+  "description": "",
+  "devDependencies": {
+    "@passoa/cxb": "^1.0.23",
+    "@types/bson": "^4.0.2",
+    "@types/jest": "^25.2.1",
+    "@types/node": "^12.6.8",
+    "cross-env": "^5.2.0",
+    "fs-extra": "^8.1.0",
+    "jest": "^25.3.1",
+    "jest-junit": "^10.0.0",
+    "jest-silent-reporter": "^0.2.1",
+    "rimraf": "^2.6.3",
+    "standard-version": "^7.1.0",
+    "ts-jest": "^25.3.1",
+    "typescript": "^3.5.3"
+  },
+  "files": [
+    "/lib"
+  ],
+  "license": "ISC",
+  "main": "lib/index.js",
+  "name": "@passoa/pddba",
+  "scripts": {
+    "build": "rimraf lib && tsc -p src",
+    "dev": "tsc -w -p src",
+    "major": "standard-version -r major",
+    "minor": "standard-version -r minor",
+    "patch": "standard-version -r patch",
+    "pretest": "npm run build"
+  },
+  "types": "lib/index.d.ts",
+  "version": "1.0.9"
+}

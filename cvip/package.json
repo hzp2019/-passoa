@@ -1,0 +1,71 @@
+{
+  "_from": "@passoa/cvip@^1.0.14",
+  "_id": "@passoa/cvip@1.0.14",
+  "_inBundle": false,
+  "_integrity": "sha1-I8C7jlqp5piXw1wNcByCXJ9OZAw=",
+  "_location": "/@passoa/cvip",
+  "_phantomChildren": {},
+  "_requested": {
+    "type": "range",
+    "registry": true,
+    "raw": "@passoa/cvip@^1.0.14",
+    "name": "@passoa/cvip",
+    "escapedName": "@passoa%2fcvip",
+    "scope": "@passoa",
+    "rawSpec": "^1.0.14",
+    "saveSpec": null,
+    "fetchSpec": "^1.0.14"
+  },
+  "_requiredBy": [
+    "/"
+  ],
+  "_resolved": "https://registry.npm.taobao.org/@passoa/cvip/download/@passoa/cvip-1.0.14.tgz",
+  "_shasum": "23c0bb8e5aa9e69897c35c0d701c825c9f4e640c",
+  "_spec": "@passoa/cvip@^1.0.14",
+  "_where": "D:\\projectList\\poseidon-node\\pdserivce",
+  "author": "",
+  "bundleDependencies": false,
+  "dependencies": {
+    "bindings": "^1.5.0",
+    "node-addon-api": "^2.0.0"
+  },
+  "deprecated": false,
+  "description": "============================\r reStructuredText with Sphinx\r ============================\r .. class:: no-web no-pdf",
+  "devDependencies": {
+    "@passoa/cxb": "^1.0.23",
+    "@types/jest": "^25.2.1",
+    "@types/node": "^12.6.8",
+    "cross-env": "^5.2.0",
+    "fs-extra": "^8.1.0",
+    "jest": "^25.3.1",
+    "jest-junit": "^10.0.0",
+    "jest-silent-reporter": "^0.2.1",
+    "rimraf": "^2.6.3",
+    "standard-version": "^7.1.0",
+    "ts-jest": "^25.3.1",
+    "typescript": "^3.5.3"
+  },
+  "files": [
+    "/lib/*.js",
+    "/lib/*.d.ts",
+    "/cxb.config.js"
+  ],
+  "license": "ISC",
+  "main": "lib/index.js",
+  "name": "@passoa/cvip",
+  "scripts": {
+    "build": "rimraf lib && tsc -p src",
+    "dev": "tsc -w -p src",
+    "example": "tsc -w -p example",
+    "install": "cxb -i",
+    "major": "standard-version -r major",
+    "minor": "standard-version -r minor",
+    "msvc2015": "cross-env build_type=RelWithDebInfo platform=vc14 OPENCV_DIR=D:/dev/opencv4/opencv/build cxb -b",
+    "msvc2017": "cross-env build_type=RelWithDebInfo OPENCV_DIR=C:/tools/opencv/build cxb -b",
+    "patch": "standard-version -r patch",
+    "test": "jest",
+    "test-ci": "jest  -t image --color -i --config jest.config.ci.js --coverage"
+  },
+  "types": "lib/index.d.ts",
+  "version": "1.0.14"
+}

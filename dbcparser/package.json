@@ -1,0 +1,72 @@
+{
+  "_from": "@passoa/dbcparser@latest",
+  "_id": "@passoa/dbcparser@1.0.7",
+  "_inBundle": false,
+  "_integrity": "sha1-OUr2v+Wl2R2KXcieHo+PFYvJNa8=",
+  "_location": "/@passoa/dbcparser",
+  "_phantomChildren": {},
+  "_requested": {
+    "type": "tag",
+    "registry": true,
+    "raw": "@passoa/dbcparser@latest",
+    "name": "@passoa/dbcparser",
+    "escapedName": "@passoa%2fdbcparser",
+    "scope": "@passoa",
+    "rawSpec": "latest",
+    "saveSpec": null,
+    "fetchSpec": "latest"
+  },
+  "_requiredBy": [
+    "#USER",
+    "/"
+  ],
+  "_resolved": "https://registry.npm.taobao.org/@passoa/dbcparser/download/@passoa/dbcparser-1.0.7.tgz",
+  "_shasum": "394af6bfe5a5d91d8a5dc89e1e8f8f158bc935af",
+  "_spec": "@passoa/dbcparser@latest",
+  "_where": "D:\\projectList\\poseidon-node\\package",
+  "author": {
+    "name": "losper"
+  },
+  "bugs": {
+    "url": "https://github.com/pass0a/dbcparser/issues"
+  },
+  "bundleDependencies": false,
+  "dependencies": {},
+  "deprecated": false,
+  "description": "dbc's parser",
+  "devDependencies": {
+    "@babel/core": "^7.5.5",
+    "@babel/preset-env": "^7.5.5",
+    "@types/node": "^12.6.8",
+    "@types/tape": "^4.2.33",
+    "babel-loader": "^8.0.6",
+    "cross-env": "^6.0.3",
+    "rimraf": "^2.6.3",
+    "standard-version": "^9.0.0",
+    "ts-loader": "^6.0.4",
+    "typescript": "^3.5.3",
+    "webpack": "^4.36.1",
+    "webpack-bundle-analyzer": "^3.3.2",
+    "webpack-cli": "^3.3.6"
+  },
+  "files": [
+    "/dist/*.js",
+    "/dist/*/*.d.ts"
+  ],
+  "homepage": "https://github.com/pass0a/dbcparser#readme",
+  "license": "MIT",
+  "main": "dist/index.js",
+  "name": "@passoa/dbcparser",
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/pass0a/dbcparser.git"
+  },
+  "scripts": {
+    "build": "rimraf dist/ && cross-env opt=build webpack",
+    "dev": "rimraf dist/ && cross-env opt=dev webpack",
+    "patch": "standard-version -r patch",
+    "test": "passoa dist/test.js"
+  },
+  "types": "dist/src/index.d.ts",
+  "version": "1.0.7"
+}

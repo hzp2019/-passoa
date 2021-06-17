@@ -1,0 +1,63 @@
+{
+  "_from": "@passoa/pack@latest",
+  "_id": "@passoa/pack@1.0.8",
+  "_inBundle": false,
+  "_integrity": "sha1-w1dhoRFPuhS/iQ9bcq8a2dM2ro4=",
+  "_location": "/@passoa/pack",
+  "_phantomChildren": {},
+  "_requested": {
+    "type": "tag",
+    "registry": true,
+    "raw": "@passoa/pack@latest",
+    "name": "@passoa/pack",
+    "escapedName": "@passoa%2fpack",
+    "scope": "@passoa",
+    "rawSpec": "latest",
+    "saveSpec": null,
+    "fetchSpec": "latest"
+  },
+  "_requiredBy": [
+    "/"
+  ],
+  "_resolved": "https://registry.npm.taobao.org/@passoa/pack/download/@passoa/pack-1.0.8.tgz",
+  "_shasum": "c35761a1114fba14bf890f5b72af1ad9d336ae8e",
+  "_spec": "@passoa/pack@latest",
+  "_where": "D:\\projectList\\poseidon-node\\pdserivce",
+  "author": {
+    "name": "losper"
+  },
+  "bugs": {
+    "url": "https://github.com/pass0a/pack/issues"
+  },
+  "bundleDependencies": false,
+  "deprecated": false,
+  "description": "[![Build status](https://dev.azure.com/passoa/pack/_apis/build/status/pack-CI)](https://dev.azure.com/passoa/pack/_apis/build/status/pack-CI?branchName=master)\r <!-- [![Coverity Scan Build Status](https://scan.coverity.com/projects/2180/badge.svg)](https://scan.coverity.com/projects/libusb-libusb) -->",
+  "devDependencies": {
+    "@types/mkdirp": "^0.5.2",
+    "@types/node": "^12.6.8",
+    "fs-extra": "^8.1.0",
+    "rimraf": "^2.6.3",
+    "rollup": "^1.16.7",
+    "rollup-plugin-commonjs": "^10.0.0",
+    "rollup-plugin-node-resolve": "^5.1.0",
+    "rollup-plugin-typescript2": "^0.22.1",
+    "typescript": "^3.5.3"
+  },
+  "homepage": "https://github.com/pass0a/pack#readme",
+  "license": "MIT",
+  "main": "lib/index.js",
+  "name": "@passoa/pack",
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/pass0a/pack.git"
+  },
+  "scripts": {
+    "build": "npm run clean && rollup -c",
+    "clean": "rimraf lib && rimraf dist",
+    "dev": "rollup -c rollup.dev.js -w",
+    "pretest": "npm run build",
+    "test": "node test/test.js"
+  },
+  "types": "lib/src/index.d.ts",
+  "version": "1.0.8"
+}

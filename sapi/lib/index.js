@@ -1,0 +1,10 @@
+"use strict";
+Object.defineProperty(exports, "__esModule", { value: true });
+exports.speak = void 0;
+var bindings = require('bindings')('sapi');
+global.crypto = require('crypto');
+function speak(str) {
+    return bindings.speak(str);
+}
+exports.speak = speak;
+//# sourceMappingURL=data:application/json;base64,eyJ2ZXJzaW9uIjozLCJmaWxlIjoiaW5kZXguanMiLCJzb3VyY2VSb290IjoiIiwic291cmNlcyI6WyIuLi9zcmMvaW5kZXgudHMiXSwibmFtZXMiOltdLCJtYXBwaW5ncyI6Ijs7O0FBQ0EsSUFBSSxRQUFRLEdBQUcsT0FBTyxDQUFDLFVBQVUsQ0FBQyxDQUFDLE1BQU0sQ0FBQyxDQUFDO0FBQzNDLE1BQU0sQ0FBQyxNQUFNLEdBQUcsT0FBTyxDQUFDLFFBQVEsQ0FBQyxDQUFDO0FBQ2xDLFNBQWdCLEtBQUssQ0FBQyxHQUFXO0lBQ2hDLE9BQU8sUUFBUSxDQUFDLEtBQUssQ0FBQyxHQUFHLENBQUMsQ0FBQztBQUM1QixDQUFDO0FBRkQsc0JBRUMiLCJzb3VyY2VzQ29udGVudCI6WyJkZWNsYXJlIHZhciBnbG9iYWw6IGFueTtcclxudmFyIGJpbmRpbmdzID0gcmVxdWlyZSgnYmluZGluZ3MnKSgnc2FwaScpO1xyXG5nbG9iYWwuY3J5cHRvID0gcmVxdWlyZSgnY3J5cHRvJyk7XHJcbmV4cG9ydCBmdW5jdGlvbiBzcGVhayhzdHI6IHN0cmluZykge1xyXG5cdHJldHVybiBiaW5kaW5ncy5zcGVhayhzdHIpO1xyXG59XHJcbiJdfQ==

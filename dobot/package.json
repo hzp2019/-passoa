@@ -1,0 +1,66 @@
+{
+  "_from": "@passoa/dobot@^1.0.0",
+  "_id": "@passoa/dobot@1.0.0",
+  "_inBundle": false,
+  "_integrity": "sha1-Xj3IBnDphuEgc5YO1cnB5SQcPho=",
+  "_location": "/@passoa/dobot",
+  "_phantomChildren": {},
+  "_requested": {
+    "type": "range",
+    "registry": true,
+    "raw": "@passoa/dobot@^1.0.0",
+    "name": "@passoa/dobot",
+    "escapedName": "@passoa%2fadbt",
+    "scope": "@passoa",
+    "rawSpec": "^1.0.0",
+    "saveSpec": null,
+    "fetchSpec": "^1.0.0"
+  },
+  "_requiredBy": [
+    "/"
+  ],
+  "_resolved": "https://registry.npm.taobao.org/@passoa/dobot/download/@passoa/dobot-1.0.0.tgz",
+  "_shasum": "5e3dc80670e986e12073960ed5c9c1e5241c3e1a",
+  "_spec": "@passoa/dobot@^1.0.0",
+  "_where": "D:\\projectList\\poseidon-node\\pdserivce",
+  "author": {
+    "name": "losper"
+  },
+  "bugs": {
+    "url": "https://github.com/pass0a/dobot/issues"
+  },
+  "bundleDependencies": false,
+  "dependencies": {},
+  "deprecated": false,
+  "description": "dobot",
+  "devDependencies": {
+    "@types/node": "^12.6.8",
+    "cross-env": "^6.0.3",
+    "rimraf": "^2.6.3",
+    "standard-version": "^7.1.0",
+    "typescript": "^3.5.3"
+  },
+  "files": [
+    "/lib"
+  ],
+  "homepage": "https://github.com/pass0a/dobot#readme",
+  "license": "MIT",
+  "main": "lib/index.js",
+  "name": "@passoa/dobot",
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/pass0a/dobot.git"
+  },
+  "scripts": {
+    "build": "rimraf lib/ && tsc -p src",
+    "dev": "rimraf lib/ && tsc -w -p src",
+    "example": "rimraf lib/ && tsc -w -p example",
+    "major": "standard-version -r major",
+    "minor": "standard-version -r minor",
+    "patch": "standard-version -r patch",
+    "test": "cross-env platform=node arch=x86 jest ",
+    "test-ci": "jest --color -i --config jest.config.ci.js --coverage"
+  },
+  "types": "lib/index.d.ts",
+  "version": "1.0.0"
+}
